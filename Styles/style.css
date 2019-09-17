@@ -1,1 +1,30 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
+
+
+footer{
+	display: flex;
+	flex-direction: column;
+	background-color: #94E096;
+	align-items: center;
+
+}
+
+footer a{
+	text-decoration: none;
+	color: #000000;
+}
+
+.foot-left{
+	display: flex;
+	flex-direction: column;
+	margin: 10px;
+	text-align: center;
+	width: 30%;
+}
+
+.social{
+	display: flex;
+	justify-content: space-between;
+	width: 30%;
+	margin: 10px;
+}

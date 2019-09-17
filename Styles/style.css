@@ -1,6 +1,38 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
 
 
+
+ /*FORMULAIRE DE CONTACT*/
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  width: 80%;
+}
+
+#name, #mail, #msg {
+  width: 100%;
+  padding: 6px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  box-sizing: border-box;
+}
+
+#msg {
+  height: 10rem;
+  resize: vertical;
+}
+
+.submitButton {
+  display: flex;
+  justify-content: center;
+}
+
+/*FIN FORMULAIRE DE CONTACT*/
+
+/*FOOTER*/
 footer{
 	display: flex;
 	flex-direction: column;
@@ -28,3 +60,4 @@ footer a{
 	width: 30%;
 	margin: 10px;
 }
+/*FIN FOOTER*/

@@ -1,8 +1,6 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
 
 
-
-
 /* Work on associations */
 
 #associations{
@@ -128,4 +126,51 @@ form {
 
 /*FIN FORMULAIRE DE CONTACT*/
 
+/*FOOTER*/
 
+.container-foot{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+footer a, p{
+	text-decoration: none;
+	color: #000000;
+}
+
+footer li{
+	list-style-type: none;
+}
+
+.foot-link{
+	flex-direction: column;
+	margin: 10px;
+	text-align: center;
+}
+
+.social{
+	margin: 10px;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.network img{
+	width: 50px;
+	height: 50px;
+	flex-wrap: nowrap;
+}
+
+@media only screen and (min-width: 600px) {
+	.container-foot{
+		display: flex;
+		flex-direction: row;	
+		justify-content: space-between;
+	}
+
+	.foot-link{
+		text-align: left;
+	}
+}
+/*FIN FOOTER*/

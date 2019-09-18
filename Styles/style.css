@@ -60,3 +60,181 @@ h4
 }
 
 }
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+
+/* Work on associations */
+
+#associations{
+    margin-bottom:100px;
+ 
+}
+
+.sectionAsso{
+    background-color:rgb(113, 222, 168, 0.6);
+    padding-bottom:30px;
+}
+
+.associations{
+    text-align:center;
+    font-family: 'Pacifico';
+
+}
+
+.nameAsso{
+    text-align:center;
+    font-family: 'Pacifico';
+}
+
+
+.list_associations{
+    margin-top:50px;
+    display:flex;
+    flex-direction:column;
+}
+
+
+
+.assoCard {
+    margin-top:10px;
+
+}
+
+.photo{
+    width: 400px;
+    height: 300px;
+    border-radius:5px;
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+}
+
+.photo:hover{
+    opacity:0.9;
+    filter: brightness(60%);
+    -webkit-filter: brightness(60%);
+}
+
+
+
+
+@media only screen and (min-width:600px){
+    .list_associations{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+
+/* End of work */
+
+/*CAROUSEL START*/
+.container-carousel{
+	width: 800px;
+	height: 250px;
+	overflow: hidden;
+	margin: auto;
+	overflow: hidden;
+}
+.slides{
+	width: calc(800px * 5);
+	height: 250px;
+	animation: gliss 20s infinite;
+	margin: 0;
+	position: relative;
+}	
+.slides img{
+	float: left;
+	height: 250px;
+	width: 800px;
+}
+@keyframes gliss{
+	0%,10%,100%{transform: translateX(0);}
+	20%,30%{transform: translateX(-800px);}
+	40%,50%{transform: translateX(-1600px);}
+	60%,70%{transform: translateX(-2400px);}
+	80%, 99.9%{transform: translateX(-3200px);}
+}
+
+/*CAROUSEL END*/
+
+ /*FORMULAIRE DE CONTACT*/
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  width: 80%;
+}
+
+#name, #mail, #msg {
+  width: 100%;
+  padding: 6px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  box-sizing: border-box;
+}
+
+#msg {
+  height: 10rem;
+  resize: vertical;
+}
+
+.submitButton {
+  display: flex;
+  justify-content: center;
+}
+
+/*FIN FORMULAIRE DE CONTACT*/
+
+/*FOOTER*/
+
+.container-foot{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+footer a, p{
+	text-decoration: none;
+	color: #000000;
+}
+
+footer li{
+	list-style-type: none;
+}
+
+.foot-link{
+	flex-direction: column;
+	margin: 10px;
+	text-align: center;
+}
+
+.social{
+	margin: 10px;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.network img{
+	width: 50px;
+	height: 50px;
+	flex-wrap: nowrap;
+}
+
+@media only screen and (min-width: 600px) {
+	.container-foot{
+		display: flex;
+		flex-direction: row;	
+		justify-content: space-between;
+	}
+
+	.foot-link{
+		text-align: left;
+	}
+}
+/*FIN FOOTER*/
+

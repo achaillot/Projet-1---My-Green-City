@@ -1,0 +1,68 @@
+h2, h3
+{
+    font-family: Pacifico;
+}
+
+h2
+{
+    color: rgb(113, 222, 168, 0.6);
+    text-align: center;
+    font-size: 60px;
+}
+
+h3
+{
+    font-size: 30px;
+    text-align: center;
+}
+
+p
+{
+    font-family: roboto;
+    text-align: justify;
+}
+
+.description
+{
+    background-color: rgb(113, 222, 168, 0.6);
+    border-radius: 20px;
+    margin:20px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    box-shadow: 6px 6px 3px gray
+}
+
+.informations
+{
+    margin:20px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+
+.image p
+{
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    max-width: 500px;
+    margin: auto;
+}
+
+
+@media screen and (min-width: 600px)
+{
+
+h2
+{
+    font-size: 80px;
+}
+
+h3
+{
+    font-size: 40px;
+    text-align: left;
+}
+
+}

@@ -1,3 +1,66 @@
+h2, h4
+{
+    font-family: pacifico;
+}
+
+h2
+{
+    font-size: 40px;
+    text-align: center;
+}
+
+h4
+{
+    font-size: 25px;
+}
+
+.list_actions
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(113, 222, 168, 0.6);
+    border-radius: 20px;
+    margin:20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    box-shadow: 6px 6px 5px gray;
+}
+
+.list_actions h4
+{
+    text-align: center;
+    color: gray;
+}
+
+.list_actions img
+{
+    width : 250px;
+    height: 300px;
+    object-fit: cover;
+    border-color: gray;
+    box-shadow: 6px 6px 5px gray;
+    border-radius: 5px;
+}
+
+@media screen and (min-width: 600px)
+{
+
+.list_actions
+{
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container
+{
+    width:80%;
+    margin: auto;
+}
+
+}
+
 *{margin: 0; padding: 0; box-sizing: border-box;}
 
 
@@ -174,3 +237,4 @@ footer li{
 	}
 }
 /*FIN FOOTER*/
+

@@ -160,6 +160,200 @@ h4
 
 /*CAROUSEL END*/
 
+/*=================================================
+  ==============Start Gestion Part=================
+  ================================================= */
+
+/*  --------------------------------------------
+    -----------/ Start mobile first /-----------
+    --------------------------------------------    */
+
+.gestion .gestion_title{
+    text-align: center;
+}
+
+.back_white{
+    background-color: #EBFBE1;
+}
+
+/* __________Start Conseils Part_____________ */
+
+.content_conseils h4{
+    padding: 2%;
+}
+
+.content_conseils .img_conseil{
+    padding: 0 5%;
+}
+
+.content_conseils p{
+    padding: 5%;
+}
+
+.img_conseil{
+    padding: 5%;
+}
+
+.img_conseil img{
+    width: 100%; min-height: 250px;
+}
+/* __________End Conseils Part_____________ */
+
+
+/* __________Start Collecte Part_____________ */
+.section_collecte{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.points_collectes h4{
+    padding: 2%;
+}
+
+.list_collectes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.map{
+    padding: 0 5%;
+}
+
+.title_point_collecte, .under_list{
+    margin: 2% 0; text-indent: 5px;
+}
+
+.collect_1 *, .collect_3 *{
+    display: none;
+}
+
+.points_collectes .collect_2{
+    list-style-type: "\25BE"; cursor: pointer; /* bas "\25B8" */
+}
+
+.collect_2 li{
+    text-indent: 10px; list-style-type: none;
+}
+
+.collect_2 ul {
+    margin-top: 5px;
+}
+
+.collect_3, .collect_1{
+    list-style-type: "\25B8"; cursor: pointer; /* bas "\25B8" */
+}
+
+.under_list{
+    font-size: 0.9em;
+}
+
+.map iframe{
+    width: 100%; min-height: 250px;
+}
+
+.map img{
+    width: 100%; min-height: 250px;
+}
+
+/* __________End Collecte Part_____________ */
+
+/*  --------------------------------------------
+    -----------/ End mobile first /-------------
+    --------------------------------------------    */
+
+/*
+//////////////////////////////////////////////////////
+ */
+
+/*  --------------------------------------------
+    -----------/ Start Desktop /----------------
+    --------------------------------------------    */
+
+@media only screen and (min-width: 600px) {
+
+    .container{
+        width: 80%; margin:auto;
+    }
+
+    /* __________Start Conseils Part_____________ */
+
+    .gestion_title{
+        text-align: center;
+        margin: 2%;
+    }
+
+    .section_conseils{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .content_conseils h4{
+        padding: 2% 0;
+        text-align: center;
+    }
+
+    .section_conseils .img_conseil {
+        padding: 1%;
+        width: 40%;
+    }
+
+    .img_conseil img{
+        width: 100%; min-height: 180px;
+    }
+
+    .content_conseils p {
+        padding: 1%;
+        width: 60%;
+    }
+    /* __________End Conseils Part_____________ */
+
+
+    /* __________Start Collecte Part_____________ */
+    .section_collecte{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .points_collectes h4{
+        text-align: center;
+        margin: 2%;
+    }
+
+    .section_collecte .map {
+        padding: 1%;
+        width: 55%;
+    }
+
+    .map iframe{
+        width: 100%; min-height: 180px;
+    }
+
+    .list_collectes{
+        padding: 1%;
+        width: 45%;
+        align-items: flex-start;
+        text-align: left;
+        margin-left: 2%;
+    }
+    /* __________End Collecte Part_____________ */
+
+}
+
+/*  --------------------------------------------
+    -----------/ End desktop /------------------
+    --------------------------------------------    */
+
+/*=================================================
+  =================End Gestion Part================
+  ================================================= */
+
+
+
  /*FORMULAIRE DE CONTACT*/
 
 form {

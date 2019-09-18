@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
     <head>
         <meta charset="utf-8">
-        <title>The Green City</title>
-        <link rel="stylesheet" type="text/css" href="Styles/style.css">
-        <script src="scripts/jquery.js"></script>
+        <title>My Green City</title>
+        <link rel="stylesheet" href="Styles/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto&display=swap" rel="stylesheet"> 
         <script src="scripts/app.js"></script>
     </head>
-
     <body>
+
     <!--_________start header______________-->
       <header>
         <!-- [NAVIGATION BAR] -->
@@ -32,36 +32,39 @@
         </nav>
         <!-- [NAVIGATION BAR END] -->
       </header>
-    <!--_________end header______________
-
-    ---------------------------------------
-
-    _________start main______________-->
         <main>
-            <!-- _________start caroussel______________-->
+        <!--_________end header______________
+            ----------------------------------------
+              _________start carrousel______________-->
             <section>
-                <div class="container caroussel">
-                    
-                </div>
+                <div class="container-carousel">
+                    <div class="slides">
+                        <img src="https://media.istockphoto.com/photos/notredamedebonport-church-seen-from-island-of-nantes-picture-id590269430?k=6&m=590269430&s=612x612&w=0&h=di6aYwyBCGuVvofnW1FY3bKx3n837VHyAl4oDOTprHQ=">
+                        <img src="https://images.pexels.com/photos/247431/pexels-photo-247431.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                        <img src="https://padlet.pics/proxy?url=https%3A%2F%2Flh4.googleusercontent.com%2F-AymTS05JRVvVz9wF3J88YsfWTvqF6A3RCBsNGAshlcTUofGiJdkxYjMp6kXOqqAXMi2VPbtaKrxasNEHW8npG0tbViYnuca%3Dw1920-h1008-rw">
+                        <img src="https://padlet.pics/proxy?url=https%3A%2F%2Flh4.googleusercontent.com%2FfIuMUcrmz1oUvFCOd_F9SenMF6tvD5Tsve92Zlx_LagUI5DrdbnxY6UZohNBv84NVvCf_tkIl616svQTBKUFLAD_wjrgwIf5qPA%3Dw1920-h1008-rw">
+                        <img src="https://images.pexels.com/photos/2781760/pexels-photo-2781760.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                    </div>
+                </div> 
             </section>
-            <!--_________end caroussel______________
+            <!--_________end carrousel______________
             ----------------------------------------
               _________start actions______________-->
             <section>
-                <div class="container actions" id="actions">
+                <div class="container_actions container">
                     <h2>Actions</h2>
                     <div class="list_actions">
-                        <article>
-                            <img src="#" alt="action_1">
-                            <h4>Action 1</h4>
+                        <article class="action1">
+                            <p><a href="Actions/action1.html"><img src="https://media.giphy.com/media/xTiTnrdPPXGQE0TOow/giphy.gif" alt="icône velo"></a></p>
+                            <h4>Se déplacer autrement</h4>
                         </article>
-                        <article>
-                            <img src="#" alt="action_2">
-                            <h4>Action 2</h4>
+                        <article class="action2">
+                            <p><a href="Actions/action2.html"><img src="https://media.giphy.com/media/3og0IJlBi94ro3OTbq/giphy.gif" alt="icône legume"></a></p>
+                            <h4>Consommer autrement</h4>
                         </article>
-                        <article>
-                            <img src="#" alt="action_3">
-                            <h4>Action 3</h4>
+                        <article class="action3">
+                            <p><a href="Actions/action3.html"><img src="https://media.giphy.com/media/l0Ex7JJvEwVXuyOTS/giphy.gif" alt="icône agir"></a></p>
+                            <h4>Agir autrement</h4>
                         </article>
                     </div>
                 </div>
@@ -71,25 +74,29 @@
             ---------------------------------------
             _________start associations______________-->
 
-            <section>
+            <!-- Work on associations-->
+
+            <section class="sectionAsso">
                 <div class="container Associations" id="associations">
-                    <h2>Associations</h2>
+                    <h2 class="associations">Associations</h2>
                     <div class="list_associations">
-                        <article>
-                            <img src="#" alt="association_1">
-                            <h4>Association 1</h4>
+                        <article class="assoCard">
+                            <a href="associations/association1.html"><img src="associations/velo.jpg" class="photo" alt="place_au_velo_nantes"></a>
+                            <h4 class="nameAsso">Place au vélo Nantes</h4>
                         </article>
-                        <article>
-                            <img src="#" alt="association_2">
-                            <h4>Association 2</h4>
+                        <article class="assoCard">
+                            <a href="associations/association2.html"><img src="associations/vegetables.jpg" class="photo" alt="bio_loire_ocean"></a>
+                            <h4 class="nameAsso">Bio Loire Océan</h4>
                         </article>
-                        <article>
-                            <img src="#" alt="association_3">
-                            <h4>Association 3</h4>
+                        <article class="assoCard">
+                            <a href="associations/association3.html"><img src="associations/river.jpg" class="photo" alt="amis_de_l'erdre"></a>
+                            <h4 class="nameAsso">Amis de l'Erdre</h4>
                         </article>
                     </div>
                 </div>
             </section>
+
+            <!-- End work -->
 
             <!--_________end associations______________-
 
@@ -173,25 +180,27 @@
 
     _________start footer______________-->
         <footer>
-            <div class="container foot">
-                <section>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at atque consequuntur debitis
-                        dolorem error, est ex incidunt itaque laboriosam, nihil nulla numquam officiis omnis quaerat
-                        saepe sed similique temporibus!
+            <div class="container-foot">
+                <div class="foot-link">
+                    <ul>
+                        <li><a href="">About us</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Mentions légales</a></li>
+                        <li><a href="">Copyright</a></li>
+                    </ul>
+                </div>
+        
+                <div class="social">
+                    <div class="network">
+                        <a href="https://www.instagram.com/?hl=fr"><img src="http://granby.challengerbanquenationale.com/wp-content/uploads/2016/05/Instagram_Icon.png"></a>
+                        <a href="https://twitter.com/?lang=fr"><img src="https://www.bestwestern-vannescentre.com/medias/logo-twitter-7ece055bf9e64dbd230b6284c6bc7dd5.png"></a>
+                        <a href="https://fr-fr.facebook.com/"><img src="https://keolis-atlantique.com/photos/reseaux-sociaux/facebook.png"></a>
+
+                </div>
+                    <p>
+                        Rejoignez nous sur les différents réseaux sociaux !
                     </p>
-                    <div class="follow">
-                        <div class="network"></div>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        </p>
-                    </div>
-                </section>
-                <ul>
-                    <li>About us</li>
-                    <li>FAQ</li>
-                    <li>Mentions légales</li>
-                    <li>copyright</li>
-                </ul>
+                </div> 
             </div>
         </footer>
     <!--_________end footer______________-->

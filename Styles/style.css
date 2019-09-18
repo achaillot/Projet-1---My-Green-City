@@ -1,5 +1,6 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
 
+
 /*CAROUSEL START*/
 .container-carousel{
 	width: 800px;
@@ -29,3 +30,34 @@
 }
 
 /*CAROUSEL END*/
+
+ /*FORMULAIRE DE CONTACT*/
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  width: 80%;
+}
+
+#name, #mail, #msg {
+  width: 100%;
+  padding: 6px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  box-sizing: border-box;
+}
+
+#msg {
+  height: 10rem;
+  resize: vertical;
+}
+
+.submitButton {
+  display: flex;
+  justify-content: center;
+}
+
+/*FIN FORMULAIRE DE CONTACT*/
+

@@ -1,11 +1,63 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
 
 
-.assoCard {
-    width:300px;
-    height:340px;
-    background-size:cover;
-    background-color:grey;
-    opacity:0.6;
-    margin-top:20px;
+
+/* Work on associations */
+
+#associations{
+    margin-bottom:100px;
+ 
 }
+
+.sectionAsso{
+    background-color:rgb(113, 222, 168, 0.6);
+    padding-bottom:30px;
+}
+
+.associations{
+    text-align:center;
+    font-family: 'Pacifico';
+
+}
+
+
+.list_associations{
+    margin-top:50px;
+    display:flex;
+    flex-direction:column;
+}
+
+
+
+.assoCard {
+    margin-top:10px;
+
+}
+
+.photo{
+    width: 400px;
+    height: 300px;
+    border-radius:5px;
+    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+}
+
+.photo:hover{
+    opacity:0.9;
+    filter: brightness(60%);
+    -webkit-filter: brightness(60%);
+}
+
+
+
+
+@media only screen and (min-width:600px){
+    .list_associations{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+
+/* End of work */

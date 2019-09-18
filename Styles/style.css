@@ -1,7 +1,7 @@
 
 h2, h4
 {
-    font-family: pacifico;
+    font-family: 'pacifico';
 }
 
 h2
@@ -110,11 +110,7 @@ h4
     -webkit-filter: brightness(100%);
 }
 
-.photo:hover{
-    opacity:0.9;
-    filter: brightness(60%);
-    -webkit-filter: brightness(60%);
-}
+
 
 
 
@@ -125,6 +121,17 @@ h4
         flex-direction: row;
         justify-content: space-around;
     }
+
+    .photo{
+      filter: brightness(100%);
+      -webkit-filter: brightness(100%);
+  }
+
+    .photo:hover{
+      opacity:0.9;
+      filter: brightness(60%);
+      -webkit-filter: brightness(60%);
+  }
 }
 
 

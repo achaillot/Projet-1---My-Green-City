@@ -10,32 +10,36 @@
     </head>
 
     <body>
-    <!--_________start header______________-->
+    <!-- _________start header______________ -->
         <header>
             <div class="container header">
                 <nav>
-                    <img src="#" alt="logo my green city">
+                    <img src="" alt="logo my green city">
                     <ul>
                         <li><a href="#actions">Actions</a></li>
                         <li><a href="#associations">Associations</a></li>
-                        <li><a href="#dechets">D&amp;chets</a></li>
+                        <li><a href="#dechets">Déchets</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-    <!--_________end header______________
-
-    ---------------------------------------
-
-    _________start main______________-->
+        <!--_________end header______________
+            ----------------------------------------
+              _________start carrousel______________-->
+  
         <main>
-            <!-- _________start caroussel______________-->
             <section>
-                <div class="container caroussel">
-                    
-                </div>
+                <div class="container-carousel">
+                    <div class="slides">
+                        <img src="https://media.istockphoto.com/photos/notredamedebonport-church-seen-from-island-of-nantes-picture-id590269430?k=6&m=590269430&s=612x612&w=0&h=di6aYwyBCGuVvofnW1FY3bKx3n837VHyAl4oDOTprHQ=">
+                        <img src="https://images.pexels.com/photos/247431/pexels-photo-247431.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                        <img src="https://padlet.pics/proxy?url=https%3A%2F%2Flh4.googleusercontent.com%2F-AymTS05JRVvVz9wF3J88YsfWTvqF6A3RCBsNGAshlcTUofGiJdkxYjMp6kXOqqAXMi2VPbtaKrxasNEHW8npG0tbViYnuca%3Dw1920-h1008-rw">
+                        <img src="https://padlet.pics/proxy?url=https%3A%2F%2Flh4.googleusercontent.com%2FfIuMUcrmz1oUvFCOd_F9SenMF6tvD5Tsve92Zlx_LagUI5DrdbnxY6UZohNBv84NVvCf_tkIl616svQTBKUFLAD_wjrgwIf5qPA%3Dw1920-h1008-rw">
+                        <img src="https://images.pexels.com/photos/2781760/pexels-photo-2781760.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+                    </div>
+                </div> 
             </section>
-            <!--_________end caroussel______________
+            <!--_________end carrousel______________
             ----------------------------------------
               _________start actions______________-->
             <section>
@@ -94,7 +98,7 @@
             _________start gestion______________-->
             <section>
                 <div class="container gestion" id="dechets">
-                    <h2>Gestion des d&amp;chets</h2>
+                    <h2>Gestion des déchets</h2>
                     <article>
                         <h4>Conseils</h4>
                         <section class="conseils">
@@ -141,21 +145,24 @@
             _________start contact______________-->
             <section>
                 <div class="container contact">
-                    <h2>Contact</h2>
-                    <form action="#" method="post">
-                        <div class="champ">
-                            <label for="name">NOM </label>
-                            <input type="text" name="name" id="name">
-                        </div>
-                        <div class="champ">
-                            <label for="email">NOM </label>
-                            <input type="email" name="email" id="email">
-                        </div>
-                        <div class="champ">
-                            <label for="message">NOM </label>
-                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                        </div>
-                    </form>
+                  <h2>Contact</h2>
+                  <form action="" method="post">
+                    <div>
+                        <label for="name"></label>
+                        <input type="text" id="name" placeholder="nom" name="user_name">
+                    </div>
+                    <div>
+                        <label for="mail"></label>
+                        <input type="email" id="mail" placeholder="e-mail" name="user_mail">
+                    </div>
+                    <div class="areaMessage">
+                        <label for="msg"></label>
+                        <textarea id="msg" placeholder="Message" name="user_message"></textarea>
+                    </div>
+                    <div class="submitButton">
+                        <input type="submit" value="Envoyer">
+                    </div>
+                  </form>
                 </div>
             </section>
             <!--__________end contact____________-->
@@ -166,23 +173,34 @@
 
     _________start footer______________-->
         <footer>
-            <div class="container foot">
+            <div class="container-foot">
+                <div class="foot-link">
+                    <ul>
+                        <li>About us</li>
+                        <li>FAQ</li>
+                        <li>Mentions légales</li>
+                        <li>copyright</li>
+                    </ul>
+                </div>
                 <section>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam at atque consequuntur debitis
-                        dolorem error, est ex incidunt itaque laboriosam, nihil nulla numquam officiis omnis quaerat
-                        saepe sed similique temporibus!
-                    </p>
-                    <div class="follow">
-                        <div class="network"></div>
+                    <div class="social">
+                        <div class="network">
+                            <ul>
+                                <li>About us</li>
+                                <li>FAQ</li>
+                                <li>Mentions légales</li>
+                                <li>copyright</li>
+                            </ul>
+                        </div>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Rejoignez nous sur les différents réseaux sociaux !
                         </p>
                     </div>
                 </section>
                 <ul>
                     <li>About us</li>
                     <li>FAQ</li>
-                    <li>Mentions l&amp;gales</li>
+                    <li>Mentions légales</li>
                     <li>copyright</li>
                 </ul>
             </div>

@@ -8,28 +8,34 @@
         <script src="scripts/app.js"></script>
     </head>
     <body>
-    <!-- _________start header______________ -->
-        <header>
-            <div class="container header">
-                <nav>
-                    <img src="" alt="logo my green city">
-                    <ul>
-                        <li><a href="#actions">Actions</a></li>
-                        <li><a href="#associations">Associations</a></li>
-                        <li><a href="#dechets">Déchets</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-        <main>
-            
 
+    <!--_________start header______________-->
+      <header>
+        <!-- [NAVIGATION BAR] -->
+        <nav id="page-nav">
+          <!-- [THE HAMBURGER] -->
+    
+          <label class="hamburgerIcon" for="hamburger">&#9776;</label>
+          <input type="checkbox" id="hamburger"/>
+    
+          <!--  [TITRE]  -->
+          <div class="pageTitle">
+            <h1 class="bigTitleCity">My Green City</h1>
+          </div>           
+          <!-- [MENU ITEMS] -->
+          <ul class="listLink">          
+            <li class="buttonLink"><a href="#actions">Actions</a></li>
+            <li class="buttonLink"><a href="#associations">Associations</a></li>
+            <li class="buttonLink"><a href="#dechets">Gestion des déchets</a></li>
+            <li class="buttonLink"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- [NAVIGATION BAR END] -->
+      </header>
+        <main>
         <!--_________end header______________
             ----------------------------------------
               _________start carrousel______________-->
-  
-        
-
             <section>
                 <div class="container-carousel">
                     <div class="slides">
@@ -145,9 +151,9 @@
 
             _________start contact______________-->
             <section>
-                <div class="container contact">
-                  <h2>Contact</h2>
+                <div>
                   <form action="" method="post">
+                  <h2 class="contactTitle">Contact</h2>  
                     <div>
                         <label for="name"></label>
                         <input type="text" id="name" placeholder="nom" name="user_name">
@@ -160,8 +166,8 @@
                         <label for="msg"></label>
                         <textarea id="msg" placeholder="Message" name="user_message"></textarea>
                     </div>
-                    <div class="submitButton">
-                        <input type="submit" value="Envoyer">
+                    <div class="containerSubmit">
+                        <input class="submitButton" type="submit" value="Envoyer">
                     </div>
                   </form>
                 </div>

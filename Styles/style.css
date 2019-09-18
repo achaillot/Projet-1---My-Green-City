@@ -1,5 +1,36 @@
 *{margin: 0; padding: 0; box-sizing: border-box;}
 
+
+/*CAROUSEL START*/
+.container-carousel{
+	width: 800px;
+	height: 250px;
+	overflow: hidden;
+	margin: auto;
+	overflow: hidden;
+}
+.slides{
+	width: calc(800px * 5);
+	height: 250px;
+	animation: gliss 20s infinite;
+	margin: 0;
+	position: relative;
+}	
+.slides img{
+	float: left;
+	height: 250px;
+	width: 800px;
+}
+@keyframes gliss{
+	0%,10%,100%{transform: translateX(0);}
+	20%,30%{transform: translateX(-800px);}
+	40%,50%{transform: translateX(-1600px);}
+	60%,70%{transform: translateX(-2400px);}
+	80%, 99.9%{transform: translateX(-3200px);}
+}
+
+/*CAROUSEL END*/
+
  /*FORMULAIRE DE CONTACT*/
 
 form {
@@ -29,3 +60,4 @@ form {
 }
 
 /*FIN FORMULAIRE DE CONTACT*/
+

@@ -5,7 +5,7 @@
         <title>My Green City</title>
         <link rel="stylesheet" href="Styles/style.css">
         <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto&display=swap" rel="stylesheet"> 
-        <script src="scripts/app.js"></script>
+        <script src="Scripts/app.js"></script>
     </head>
     <body>
 
@@ -14,16 +14,16 @@
         <!-- [NAVIGATION BAR] -->
         <nav id="page-nav">
           <!-- [THE HAMBURGER] -->
-    
+
           <label class="hamburgerIcon" for="hamburger">&#9776;</label>
           <input type="checkbox" id="hamburger"/>
-    
+
           <!--  [TITRE]  -->
           <div class="pageTitle">
             <h1 class="bigTitleCity">My Green City</h1>
-          </div>           
+          </div>
           <!-- [MENU ITEMS] -->
-          <ul class="listLink">          
+          <ul class="listLink">
             <li class="buttonLink"><a href="#actions">Actions</a></li>
             <li class="buttonLink"><a href="#associations">Associations</a></li>
             <li class="buttonLink"><a href="#dechets">Gestion des déchets</a></li>
@@ -124,22 +124,25 @@
                         <h4>Points de collecte</h4>
                         <section class="section_collecte">
                             <ul class="list_collectes">
-                                <li class="title_point_collecte collect_1"> quibusdam rem sapiente
-                                    <ul class="under_list">
+                                <li class="title_point_collecte collect_1" id="collect_1" onclick="removeClass_1();">
+                                    <a class="toggle" href="#list_1">quibusdam rem sapiente</a>
+                                    <ul class="toggle-content" id="list_1">
                                         <li>Lorem ipsum dolor</li>
                                         <li>sit amet,</li>
                                         <li>consectetur adipisicing</li>
                                     </ul>
                                 </li>
-                                <li class="title_point_collecte collect_2"> explicabo incidunt laborum
-                                    <ul class="under_list">
+                                <li class="title_point_collecte collect_2" id="collect_2" onclick="removeClass_2();">
+                                    <a class="toggle" href="#list_2">explicabo incidunt laborum</a>
+                                    <ul class="toggle-content" id="list_2">
                                         <li>elit. Ab atque</li>
                                         <li>beatae culpa</li>
                                         <li>dignissimos dolorum eaque</li>
                                     </ul>
                                 </li>
-                                <li class="title_point_collecte collect_3"> Ad aspernatur atque
-                                    <ul class="under_list">
+                                <li class="title_point_collecte collect_3" id="collect_3" onclick="removeClass_3();">
+                                    <a class="toggle" href="#list_3">Ad aspernatur atque</a>
+                                    <ul class="toggle-content" id="list_3">
                                         <li>maxime mollitia quam</li>
                                         <li>quibusdam ratione</li>
                                         <li>debitis dolore est</li>
@@ -148,6 +151,7 @@
                             </ul>
                             <div class="map">
                                 <iframe src="https://www.google.com/maps/d/embed?mid=1Ykms51Bp9PeP1KdNlJYifwF6aeP0SrIz"></iframe>
+
                             </div>
                         </section>
                     </article>

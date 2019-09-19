@@ -420,8 +420,11 @@ h4
 
 
 
- /*FORMULAIRE DE CONTACT*/
+ /*FORMULAIRE DE CONTACT V2*/
 
+#contact {
+  background-color: #71DEA2;
+}
 form {
   display: flex;
   justify-content: center;
@@ -455,10 +458,9 @@ form {
   height: 35px;
 }
 
-/* [FORMULAIRE DE CONTACT END] */
+/* [FORMULAIRE DE CONTACT V2 END] */
 
-/* [NAVIGATION BAR] */
-
+/* [NAVIGATION BAR V2] */
 #page-nav {
   width: 100%;
   background-color: #383952CC;
@@ -466,6 +468,7 @@ form {
   top: 0;
   display: flex;
   flex-wrap: wrap;
+  z-index: 100;
 }
 
 .pageTitle {
@@ -474,7 +477,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 85%;
+  width: 80%;
 }
 
 .bigTitleCity {
@@ -506,7 +509,12 @@ form {
   box-sizing: border-box;
 }
 
-.listLink .buttonLink a {
+.navLink {
+  width: 100%;
+  display: block;
+}
+
+.listLink .buttonLink .navLink {
   color: #fff;
   text-decoration: none;
   width: 98%;
@@ -515,24 +523,31 @@ form {
 .hamburgerIcon {
   display: inline-block;
   color: #fff;
-  background-color: #323348CC;
+  background-color: #323348;
   font-style: normal;
   font-size: 2.3em;
   padding: 10px;
+  cursor: pointer;
 }
 
 .listLink .buttonLink {
   display: block;
 }
 
+.buttonLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .listLink {
   display: none;
 }
 
-input:checked ~ ul {
+input:checked ~ .listLink {
   display: block;
-  position: fixed;
-  top: 53px;
+  position: absolute;
+  top: 63px;
   background-color: #323348CC;
 }
 
@@ -546,8 +561,9 @@ html, body {
   background-color: #333;
 }
 
+/* [MEDIA QUERIES NAVIGATION BAR V2] */
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 750px) {
 
   #page-nav {
     width: 100%;
@@ -563,7 +579,7 @@ html, body {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     width: 30%;
   }
@@ -584,7 +600,30 @@ html, body {
     display: none;
   }
 
-  .listLink .buttonLink a {
+  .navLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .actionLink{
+    width: 18%;
+  }
+  
+  .assoLink{
+    width: 25%;
+  }
+  
+  .gestionLink{
+    width: 39%;
+  }
+  
+  .contactLink{
+    width: 18%;
+  }
+
+  .listLink .buttonLink .navLink {
     color: #fff;
     text-decoration: none;
   } 
@@ -604,11 +643,9 @@ html, body {
     height: 100%;
   }
 }
+/* [MEDIA QUERIES NAVIGATION BAR V2 END] */
 
-
-/* [NAVIGATION BAR END] */
-
-/*FIN FORMULAIRE DE CONTACT*/
+/* [NAVIGATION BAR V2 END] */
 
 /*FOOTER*/
 footer{

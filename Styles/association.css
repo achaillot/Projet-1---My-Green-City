@@ -131,15 +131,22 @@
     font-family: 'Pacifico', cursive;
     font-size:30px;
     text-align:center;
+
+    
 }
 
 .infos{
     margin-bottom:100px;
+    padding-left:20px;
+    padding-right:20px;
 }
 
 .description{
     background-color:rgb(113, 222, 168, 0.6);
     padding-bottom:100px;
+    padding-left:20px;
+    padding-right:20px;
+ 
 
 }
 
@@ -155,10 +162,7 @@ a:hover{
     color:#323348;
 }
 
-.text{
-    margin-left:10px;
-    margin-right:10px;
-}
+
 
 
 

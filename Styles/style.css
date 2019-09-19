@@ -51,6 +51,22 @@ h4
     margin-top: 10px;
 }
 
+@media screen and (min-width: 700px)
+{
+
+.list_actions
+{
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container
+{
+    width:80%;
+    margin: auto;
+}
+
+}
 
 *{margin: 0; padding: 0; box-sizing: border-box;}
 
@@ -119,16 +135,11 @@ h4
     border-color: gray;
     box-shadow: 6px 6px 5px gray;
     border-radius: 5px;
-  
-    
 }
 
 
+@media only screen and (min-width:700px){
 
-
-
-
-@media only screen and (min-width:650px){
     .list_associations{
         display:flex;
         flex-direction: row;
@@ -286,44 +297,53 @@ h4
     text-align: left;
 }
 
-.map{
-    padding: 0 5%;
-}
-
 .title_point_collecte, .under_list{
-    margin: 2% 0; text-indent: 5px;
-}
-
-.collect_1 *, .collect_3 *{
-    display: none;
-}
-
-.points_collectes .collect_2{
-    list-style-type: "\25BE"; cursor: pointer; /* bas "\25B8" */
-}
-
-.collect_2 li{
-    text-indent: 10px; list-style-type: none;
+    margin: 2% 0; text-indent: 10px;
 }
 
 .collect_2 ul {
     margin-top: 5px;
 }
 
-.collect_3, .collect_1{
-    list-style-type: "\25B8"; cursor: pointer; /* bas "\25B8" */
+#collect_1, #collect_2, #collect_3{
+    list-style-type: "\25B8"; /* flèche vers le haut */
 }
 
-.under_list{
+#collect_1_on, #collect_2_on, #collect_3_on{
+    list-style-type: "\25BE"; /* flèche vers le bas */
+}
+
+.under_list-content{
     font-size: 0.9em;
 }
 
-.map iframe{
-    width: 100%; min-height: 250px;
+.toggle-content {
+    display: none;
 }
 
-.map img{
-    width: 100%; min-height: 250px;
+.toggle-content.is-visible {
+    display: block;
+}
+
+.toggle-content.is-visible li {
+    text-indent: 30px;
+    list-style-type: none;
+    font-size: 0.9em;
+    margin: 3% 0;
+}
+
+.title_point_collecte a{
+    color: black;
+    text-decoration: none;
+}
+
+.map{
+    padding: 0 5%;
+}
+
+.map iframe{
+    width: 100%;
+    min-height: 250px;
 }
 
 /* __________End Collecte Part_____________ */
@@ -340,7 +360,7 @@ h4
     -----------/ Start Desktop /----------------
     --------------------------------------------    */
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 700px) {
 
     .container{
         width: 80%; margin:auto;
@@ -400,12 +420,13 @@ h4
 
 
     .list_collectes{
-        padding: 1%;
+        padding-top: 1%;
         width: 45%;
         align-items: flex-start;
         text-align: left;
-        margin-left: 2%;
+        padding-left: 8%;
     }
+
     /* __________End Collecte Part_____________ */
 
 }
@@ -564,7 +585,7 @@ html, body {
 /* [MEDIA QUERIES NAVIGATION BAR V2] */
 
 @media screen and (min-width: 750px) {
-
+  
   #page-nav {
     width: 100%;
     background-color: #383952CC;
@@ -701,11 +722,6 @@ transform:scale(1.25);
   -o-transition: all 0.5s ease; 
   transition: all 0.5s ease;
 }
-
-
-
-
-
 
 @media only screen and (min-width: 700px) {
 

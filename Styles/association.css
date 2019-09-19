@@ -1,6 +1,98 @@
+/* Navigation */
+
+#page-nav {
+    width: 100%;
+    background-color: #383952CC;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .pageTitle {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+  }
+  
+  .bigTitleCity {
+    padding: 0;
+    margin: 0;
+    font-family: pacifico, cursive;
+    color: #fff;
+  }
+  
+  #hamburger {
+    display: none;
+  }
+  
+  .hamburgerIcon {
+    background-color: #383952CC;
+    padding: 5px;
+  }
+  
+  .listLink {
+    list-style: none;
+    margin: 0;
+    padding: 0; 
+    width: 100%;
+  }
+  
+  .listLink .buttonLink {
+    display: inline-block;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+  
+  .listLink .buttonLink a {
+    color: #fff;
+    text-decoration: none;
+    width: 98%;
+  } 
+  
+  .hamburgerIcon {
+    display: inline-block;
+    color: #fff;
+    background-color: #323348CC;
+    font-style: normal;
+    font-size: 2.3em;
+    padding: 10px;
+  }
+  
+  .listLink .buttonLink {
+    display: block;
+  }
+  
+  .listLink {
+    display: none;
+  }
+  
+  input:checked ~ ul {
+    display: block;
+    position: fixed;
+    top: 53px;
+    background-color: #323348CC;
+  }
+  
+  html, body {
+    padding: 0;
+    margin: 0;
+    font-family: roboto, sans-serif;
+  }
+  
+  .buttonLink:hover {
+    background-color: #333;
+  }
+  
+  
+
+/* End Navigation */
 
 
-
+/* Associations */
 
 .imageAsso1{
     width:200px;
@@ -39,15 +131,22 @@
     font-family: 'Pacifico', cursive;
     font-size:30px;
     text-align:center;
+
+    
 }
 
 .infos{
     margin-bottom:100px;
+    padding-left:20px;
+    padding-right:20px;
 }
 
 .description{
     background-color:rgb(113, 222, 168, 0.6);
     padding-bottom:100px;
+    padding-left:20px;
+    padding-right:20px;
+ 
 
 }
 
@@ -63,22 +162,126 @@ a:hover{
     color:#323348;
 }
 
-.text{
-    margin-left:10px;
-    margin-right:10px;
+
+
+
+
+/* End Associations */
+
+
+/* Footer */
+
+.container-foot{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-
-@media only screen and (min-width:600px){
-
-.nameAsso{
-    font-size:80px;
-  
+footer a, p{
+	text-decoration: none;
+	color: #000000;
 }
 
-.infoAsso{
-    font-size:40px;
-    text-align:left;
+footer li{
+	list-style-type: none;
 }
 
+.foot-link{
+	flex-direction: column;
+	margin: 10px;
+	text-align: center;
 }
+
+.social{
+	margin: 10px;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.network img{
+	width: 50px;
+	height: 50px;
+	flex-wrap: nowrap;
+}
+
+/* End Footer */
+
+
+
+@media only screen and (min-width: 600px) {
+	.container-foot{
+		display: flex;
+		flex-direction: row;	
+		justify-content: space-between;
+	}
+
+	.foot-link{
+		text-align: left;
+    }
+    
+    #page-nav {
+        width: 100%;
+        background-color: #383952CC;
+        position: sticky;
+        top: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    
+      .pageTitle {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 30%;
+      }
+      
+      .bigTitleCity {
+        padding: 0;
+        margin: 0;
+        margin-left: 10px;
+        font-family: pacifico, cursive;
+        color: #fff;
+      }
+    
+      #hamburger {
+        display: none;
+      }
+      
+      .hamburgerIcon {
+        display: none;
+      }
+    
+      .listLink .buttonLink a {
+        color: #fff;
+        text-decoration: none;
+      } 
+    
+      .listLink {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 10px;
+        width: 65%;
+      }
+    
+      .buttonLink:hover {
+        background-color: #333;
+        height: 100%;
+      }
+
+      .nameAsso{
+        font-size:80px;
+      }
+    
+    .infoAsso{
+        font-size:40px;
+        text-align:left;
+    }
+}
+

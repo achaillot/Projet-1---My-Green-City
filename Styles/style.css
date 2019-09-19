@@ -1,7 +1,7 @@
 
 h2, h4
 {
-    font-family: pacifico;
+    font-family: 'pacifico';
 }
 
 h2
@@ -51,35 +51,25 @@ h4
     margin-top: 10px;
 }
 
-@media screen and (min-width: 600px)
-{
-
-.list_actions
-{
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.container
-{
-    width:80%;
-    margin: auto;
-}
-
-}
 
 *{margin: 0; padding: 0; box-sizing: border-box;}
 
 
 /* Work on associations */
 
-#associations{
+.Associations{
     margin-bottom:100px;
+    background-color: rgb(113, 222, 168, 0.6);
+    box-shadow: 6px 6px 5px gray;
+    border-radius: 20px;
+    padding-bottom:50px;
+ 
  
 }
 
+
 .sectionAsso{
-    background-color:rgb(113, 222, 168, 0.6);
+ 
     padding-bottom:30px;
 }
 
@@ -92,19 +82,28 @@ h4
 .nameAsso{
     text-align:center;
     font-family: 'Pacifico';
+    
 }
 
 
 .list_associations{
+   
     margin-top:50px;
+    border-radius: 20px;
+    margin:20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
     display:flex;
-    flex-direction:column;
+    flex-direction: column;
+    align-items: center;
+  
 }
 
 
 
 .assoCard {
-    margin-top:10px;
+    margin-top:10px; 
 
 }
 
@@ -114,23 +113,39 @@ h4
     border-radius:5px;
     filter: brightness(100%);
     -webkit-filter: brightness(100%);
+    width : 250px;
+    height: 300px;
+    object-fit: cover;
+    border-color: gray;
+    box-shadow: 6px 6px 5px gray;
+    border-radius: 5px;
+  
+    
 }
 
-.photo:hover{
-    opacity:0.9;
-    filter: brightness(60%);
-    -webkit-filter: brightness(60%);
-}
 
 
 
 
-@media only screen and (min-width:600px){
+
+@media only screen and (min-width:650px){
     .list_associations{
         display:flex;
         flex-direction: row;
         justify-content: space-around;
     }
+
+    .photo{
+      filter: brightness(100%);
+      -webkit-filter: brightness(100%);
+  }
+
+    .photo:hover{
+      opacity:0.9;
+      filter: brightness(60%);
+      -webkit-filter: brightness(60%);
+  }
+
 }
 
 
@@ -650,7 +665,13 @@ transform:scale(1.25);
   transition: all 0.5s ease;
 }
 
+
+
+
+
+
 @media only screen and (min-width: 700px) {
+
 	.container-foot{
 		display: flex;
 		flex-direction: row;	
@@ -659,6 +680,18 @@ transform:scale(1.25);
 
 	.foot-link{
 		text-align: left;
-	}
+  }
+  
+  .list_actions
+{
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container
+{
+    width:80%;
+    margin: auto;
+}
 }
 /*FIN FOOTER*/

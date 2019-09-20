@@ -1,7 +1,4 @@
 /* Navigation */
-
-
-
 #contact {
   background-color: rgb(113, 222, 168, 0.6);
   margin-top: 30px;
@@ -49,7 +46,7 @@ form {
   top: 0;
   display: flex;
   flex-wrap: wrap;
-  z-index: 100;
+  z-index: 2;
 }
 
 .pageTitle {
@@ -90,6 +87,21 @@ form {
   box-sizing: border-box;
 }
 
+.homeLink:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.homeLink:visited {
+  color: #fff;
+  text-decoration: none;
+}
+
+.homeLink:active {
+  color: #fff;
+  text-decoration: none;
+}
+
 .navLink {
   width: 100%;
   display: block;
@@ -123,12 +135,14 @@ form {
 
 .listLink {
   display: none;
+
+  z-index: 1;
 }
 
 input:checked ~ .listLink {
   display: block;
   position: absolute;
-  top: 63px;
+  top: 65px;
   background-color: #323348CC;
 }
 
@@ -140,7 +154,7 @@ html, body {
 }
 
 .buttonLink:hover {
-  background-color: #333;
+  background-color: rgb(113, 222, 168, 0.6);
 }
 
 /* [MEDIA QUERIES NAVIGATION BAR V2] */
@@ -161,9 +175,10 @@ html, body {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    width: 30%;
+    width: 27%;
+    padding-left: 30px;
   }
   
   .bigTitleCity {
@@ -194,11 +209,11 @@ html, body {
   }
   
   .assoLink{
-    width: 25%;
+    width: 28%;
   }
   
   .gestionLink{
-    width: 39%;
+    width: 36%;
   }
   
   .contactLink{
@@ -214,18 +229,19 @@ html, body {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    justify-content: space-around;
     align-items: center;
-    margin-right: 10px;
-    width: 65%;
+    width: 70%;
   }
 
   .buttonLink:hover {
-    background-color: #333;
+    background-color:rgb(113, 222, 168, 0.6);
     height: 100%;
   }
 }
-/* End Navigation */
+
+/* [MEDIA QUERIES NAVIGATION BAR V2 END] */
+
+/* [NAVIGATION BAR V2 END] */
 
 
 /* Associations */

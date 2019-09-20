@@ -400,7 +400,140 @@ html, body {
 /*ASSOCIATIONS END*/
 
 
+
+@media only screen and (min-width:700px){
+
+    .list_associations{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .photo{
+      filter: brightness(100%);
+      -webkit-filter: brightness(100%);
+  }
+
+    .photo:hover{
+      opacity:0.9;
+      filter: brightness(60%);
+      -webkit-filter: brightness(60%);
+  }
+
+}
+
+
+/* End of work */
+
+/*CAROUSEL START*/
+.container-carousel{
+	width: 320px;
+  height: 150px;
+	overflow: hidden;
+	margin: auto;
+  overflow: hidden;
+}
+.slides{
+	width: calc(320px * 5);
+	height: 150px;
+	animation: gliss 30s infinite;
+	margin: 0;
+	position: relative;
+}	
+.slides img{
+	float: left;
+  width: 320px;
+	height: 150px;
+	
+}
+@keyframes gliss{
+	0%,10%,100%{transform: translateX(0);}
+	20%,30%{transform: translateX(-320px);}
+	40%,50%{transform: translateX(-640px);}
+	60%,70%{transform: translateX(-960px);}
+	80%, 99.9%{transform: translateX(-1280px);}
+}
+
+@media only screen and (min-width: 420px) {
+  .container-carousel{
+  width: 400px;
+  height: 200px;}
+
+  .slides{
+  width: calc(400px * 5);
+  height: 200px;}
+
+  .slides img{
+  width: 400px;
+  height: 200px;}
+
+  @keyframes gliss{
+  0%,10%,100%{transform: translateX(0);}
+  20%,30%{transform: translateX(-400px);}
+  40%,50%{transform: translateX(-800px);}
+  60%,70%{transform: translateX(-1200px);}
+  80%, 99.9%{transform: translateX(-1600px);}
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .container-carousel{
+  width: 650px;
+  height: 250px;}
+
+  .slides{
+  width: calc(650px * 5);
+  height: 250px;}
+
+  .slides img{
+  width: 650px;
+  height: 250px;}
+
+  @keyframes gliss{
+  0%,10%,100%{transform: translateX(0);}
+  20%,30%{transform: translateX(-650px);}
+  40%,50%{transform: translateX(-1300px);}
+  60%,70%{transform: translateX(-1950px);}
+  80%, 99.9%{transform: translateX(-2600px);}
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  .container-carousel{
+  width: 800px;
+  height: 300px;}
+
+  .slides{
+  width: calc(800px * 5);
+  height: 300px;}
+
+  .slides img{
+  width: 800px;
+  height: 300px;}
+
+  @keyframes gliss{
+  0%,10%,100%{transform: translateX(0);}
+  20%,30%{transform: translateX(-800px);}
+  40%,50%{transform: translateX(-1600px);}
+  60%,70%{transform: translateX(-2400px);}
+  80%, 99.9%{transform: translateX(-3200px);}
+  }
+}
+
+
+
+/*CAROUSEL END*/
+
+/*=================================================
+  ==============Start Gestion Part=================
+  ================================================= */
+
+/*  --------------------------------------------
+    -----------/ Start mobile first /-----------
+    --------------------------------------------    */
+
 /*GESTION START*/
+
 #dechets{
     margin-top: 50px;
 }

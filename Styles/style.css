@@ -454,6 +454,11 @@ html, body {
     align-items: center;
     margin-bottom: 10px;
     text-align: left;
+    padding: 0 10px;
+}
+
+.toggle{
+    font-weight: bold;
 }
 
 .title_point_collecte, .under_list{
@@ -472,10 +477,6 @@ html, body {
     list-style-type: "\25BE"; /* flèche vers le bas */
 }
 
-.under_list-content{
-    font-size: 0.9em;
-}
-
 .toggle-content {
     display: none;
 }
@@ -491,6 +492,7 @@ html, body {
     margin-top: 3%;
     margin-bottom: 3%;
     margin-left: 5%;
+    text-align: justify;
 }
 
 .toggle-content.is-visible li a {

@@ -1,24 +1,319 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-h2, h4
-{
+h2, h4{
     font-family: 'pacifico';
     color: #383952;
 }
 
-h2
-{
+h2{
     font-size: 40px;
     text-align: center;
 }
 
-h4
-{
+h4{
     font-size: 25px;
 }
 
+/* [NAVIGATION BAR V2] */
+#page-nav {
+    width: 100%;
+    background-color: #383952CC;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 100;
+}
+
+.pageTitle {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.bigTitleCity {
+    padding: 0;
+    margin: 0;
+    font-family: pacifico, cursive;
+    color: #fff;
+}
+
+#hamburger {
+    display: none;
+}
+
+.hamburgerIcon {
+    background-color: #383952CC;
+    padding: 5px;
+}
+
+.listLink {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.listLink .buttonLink {
+    display: inline-block;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.navLink {
+    width: 100%;
+    display: block;
+}
+
+.listLink .buttonLink .navLink {
+    color: #fff;
+    text-decoration: none;
+    width: 98%;
+}
+
+.hamburgerIcon {
+    display: inline-block;
+    color: #fff;
+    background-color: #323348;
+    font-style: normal;
+    font-size: 2.3em;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.listLink .buttonLink {
+    display: block;
+}
+
+.buttonLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.listLink {
+    display: none;
+}
+
+input:checked ~ .listLink {
+    display: block;
+    position: absolute;
+    top: 63px;
+    background-color: #323348CC;
+}
+
+html, body {
+    background-color: #faf8f0;
+    padding: 0;
+    margin: 0;
+    font-family: roboto, sans-serif;
+}
+
+.buttonLink:hover {
+    background-color: #333;
+}
+
+/* [MEDIA QUERIES NAVIGATION BAR V2] */
+
+@media screen and (min-width: 750px) {
+
+    #page-nav {
+        width: 100%;
+        background-color: #383952CC;
+        position: sticky;
+        top: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .pageTitle {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+    }
+
+    .bigTitleCity {
+        padding: 0;
+        margin: 0;
+        margin-left: 10px;
+        font-family: pacifico, cursive;
+        color: #fff;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    .hamburgerIcon {
+        display: none;
+    }
+
+    .navLink {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .actionLink{
+        width: 18%;
+    }
+
+    .assoLink{
+        width: 25%;
+    }
+
+    .gestionLink{
+        width: 39%;
+    }
+
+    .contactLink{
+        width: 18%;
+    }
+
+    .listLink .buttonLink .navLink {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .listLink {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        justify-content: space-around;
+        align-items: center;
+        margin-right: 10px;
+        width: 65%;
+    }
+
+    .buttonLink:hover {
+        background-color: #333;
+        height: 100%;
+    }
+}
+/* [MEDIA QUERIES NAVIGATION BAR V2 END] */
+
+/* [NAVIGATION BAR V2 END] */
+
+
+
+/*CAROUSEL START*/
+.container-carousel{
+    width: 320px;
+    height: 150px;
+    overflow: hidden;
+    margin: auto;
+    overflow: hidden;
+}
+.slides{
+    width: calc(320px * 5);
+    height: 150px;
+    animation: gliss 30s infinite;
+    margin: 0;
+    position: relative;
+}
+.slides img{
+    float: left;
+    width: 320px;
+    height: 150px;
+
+}
+@keyframes gliss{
+    0%,10%,100%{transform: translateX(0);}
+    20%,30%{transform: translateX(-320px);}
+    40%,50%{transform: translateX(-640px);}
+    60%,70%{transform: translateX(-960px);}
+    80%, 99.9%{transform: translateX(-1280px);}
+}
+
+@media only screen and (min-width: 420px) {
+    .container-carousel{
+        width: 400px;
+        height: 200px;}
+
+    .slides{
+        width: calc(400px * 5);
+        height: 200px;}
+
+    .slides img{
+        width: 400px;
+        height: 200px;}
+
+    @keyframes gliss{
+        0%,10%,100%{transform: translateX(0);}
+        20%,30%{transform: translateX(-400px);}
+        40%,50%{transform: translateX(-800px);}
+        60%,70%{transform: translateX(-1200px);}
+        80%, 99.9%{transform: translateX(-1600px);}
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .container-carousel{
+        width: 650px;
+        height: 250px;}
+
+    .slides{
+        width: calc(650px * 5);
+        height: 250px;}
+
+    .slides img{
+        width: 650px;
+        height: 250px;}
+
+    @keyframes gliss{
+        0%,10%,100%{transform: translateX(0);}
+        20%,30%{transform: translateX(-650px);}
+        40%,50%{transform: translateX(-1300px);}
+        60%,70%{transform: translateX(-1950px);}
+        80%, 99.9%{transform: translateX(-2600px);}
+    }
+}
+
+@media only screen and (min-width: 850px) {
+    .container-carousel{
+        width: 800px;
+        height: 300px;}
+
+    .slides{
+        width: calc(800px * 5);
+        height: 300px;}
+
+    .slides img{
+        width: 800px;
+        height: 300px;}
+
+    @keyframes gliss{
+        0%,10%,100%{transform: translateX(0);}
+        20%,30%{transform: translateX(-800px);}
+        40%,50%{transform: translateX(-1600px);}
+        60%,70%{transform: translateX(-2400px);}
+        80%, 99.9%{transform: translateX(-3200px);}
+    }
+}
+/*CAROUSEL END*/
+
+
+/*  --------------------------------------------
+    -----------/ Start mobile first /-----------
+    --------------------------------------------    */
+
+/*ACTIONS START*/
 #actions{
   margin-top: 50px;
 }
+
 .list_actions
 {
     display: flex;
@@ -46,42 +341,18 @@ h4
     border-radius: 5px;
     margin-top: 10px;
 }
-
-@media screen and (min-width: 700px)
-{
-
-.list_actions
-{
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-.container
-{
-    width:80%;
-    margin: auto;
-}
-
-}
-
-*{margin: 0; padding: 0; box-sizing: border-box;}
+/*ACTIONS END*/
 
 
-/* Work on associations */
-
+/*ASSOCIATIONS START*/
 .sectionAsso{
-  background-color: rgb(113, 222, 168, 0.6);
-
+    background-color: rgb(113, 222, 168, 0.6);
 }
+
 .Associations{
     margin-bottom:100px;
-    
-   
     padding-bottom:20px;
- 
- 
 }
-
 
 .sectionAsso{
     margin-top: 50px;
@@ -90,18 +361,14 @@ h4
 .associations{
     text-align:center;
     font-family: 'Pacifico';
-
 }
 
 .nameAsso{
     text-align:center;
     font-family: 'Pacifico';
-    
 }
 
-
 .list_associations{
-   
     margin-top:50px;
     border-radius: 20px;
     margin:20px;
@@ -111,14 +378,10 @@ h4
     display:flex;
     flex-direction: column;
     align-items: center;
-  
 }
 
-
-
 .assoCard {
-    margin-top:10px; 
-
+    margin-top:10px;
 }
 
 .photo{
@@ -134,6 +397,8 @@ h4
     box-shadow: 6px 6px 5px gray;
     border-radius: 5px;
 }
+/*ASSOCIATIONS END*/
+
 
 
 @media only screen and (min-width:700px){
@@ -166,7 +431,7 @@ h4
   height: 150px;
 	overflow: hidden;
 	margin: auto;
-	overflow: hidden;
+  overflow: hidden;
 }
 .slides{
 	width: calc(320px * 5);
@@ -266,8 +531,11 @@ h4
 /*  --------------------------------------------
     -----------/ Start mobile first /-----------
     --------------------------------------------    */
+
+/*GESTION START*/
+
 #dechets{
-  margin-top: 50px;
+    margin-top: 50px;
 }
 .gestion .gestion_title{
     text-align: center;
@@ -371,6 +639,104 @@ h4
 }
 
 /* __________End Collecte Part_____________ */
+/*GESTION END*/
+
+
+/*CONTACT START*/
+#contact {
+    background-color: rgb(113, 222, 168, 0.6);
+    margin-top: 30px;
+}
+form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+}
+
+#name, #mail, #msg {
+    width: 100%;
+    padding: 6px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    box-sizing: border-box;
+}
+
+#msg {
+    height: 10rem;
+    resize: vertical;
+}
+
+.containerSubmit {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.submitButton {
+    width: 100px;
+    height: 35px;
+}
+/*CONTACT END*/
+
+
+/*FOOTER START*/
+footer{
+    background-color: #383952CC;
+}
+.container-foot{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer a, footer p{
+    color: #FFF;
+    text-decoration: none;
+    font-family: pacifico;
+}
+
+footer li{
+    list-style-type: none;
+}
+
+.foot-link{
+    flex-direction: column;
+    margin: 10px;
+    text-align: center;
+}
+.foot-link ul li :hover{
+    color: #FED639;
+}
+
+.social{
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.network img:hover {
+    -webkit-transform:scale(1.25);
+    -moz-transform:scale(1.25);
+    -ms-transform:scale(1.25);
+    -o-transform:scale(1.25);
+    transform:scale(1.25);
+}
+.network img{
+    width: 50px;
+    height: 50px;
+    flex-wrap: nowrap;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+/*FOOTER END*/
 
 /*  --------------------------------------------
     -----------/ End mobile first /-------------
@@ -384,12 +750,41 @@ h4
     -----------/ Start Desktop /----------------
     --------------------------------------------    */
 
-@media only screen and (min-width: 700px) {
+
+@media screen and (min-width: 700px){
 
     .container{
-        width: 80%; margin:auto;
+        width:80%;
+        margin: auto;
     }
 
+    /*ACTIONS START*/
+    .list_actions{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    /*ACTIONS END*/
+
+    /*ASSOCIATIONS START*/
+    .list_associations{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .photo{
+        filter: brightness(100%);
+        -webkit-filter: brightness(100%);
+    }
+
+    .photo:hover{
+        opacity:0.9;
+        filter: brightness(60%);
+        -webkit-filter: brightness(60%);
+    }
+    /*ASSOCIATIONS END*/
+
+    /*GESTION START*/
     /* __________Start Conseils Part_____________ */
 
     .gestion_title{
@@ -404,7 +799,7 @@ h4
     }
 
     .section_conseils p{
-      text-align: justify;
+        text-align: justify;
     }
 
     .content_conseils h4{
@@ -456,6 +851,8 @@ h4
     }
 
     /* __________End Collecte Part_____________ */
+    /*GESTION END*/
+
 
 }
 
@@ -775,21 +1172,16 @@ transform:scale(1.25);
 		flex-direction: row;	
 		justify-content: space-between;
 	}
-
-	.foot-link{
-		text-align: left;
+  .foot-link{
+    text-align: left;
   }
-  
-  .list_actions
-{
+
+  .list_actions{
     flex-direction: row;
     justify-content: space-around;
+  }
+    /*FOOTER END*/
 }
-
-.container
-{
-    width:80%;
-    margin: auto;
-}
-}
-/*FIN FOOTER*/
+/*  --------------------------------------------
+    -----------/ End desktop /------------------
+    --------------------------------------------    */

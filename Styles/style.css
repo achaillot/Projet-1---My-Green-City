@@ -166,7 +166,7 @@ h4
   height: 150px;
 	overflow: hidden;
 	margin: auto;
-	overflow: hidden;
+  overflow: hidden;
 }
 .slides{
 	width: calc(320px * 5);

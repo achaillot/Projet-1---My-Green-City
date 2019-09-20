@@ -772,6 +772,12 @@ footer li{
         flex-direction: row;
         justify-content: space-around;
     }
+
+    .list_actions img:hover{
+      opacity:0.9;
+      filter: brightness(60%);
+      -webkit-filter: brightness(60%);
+    }
     /*ACTIONS END*/
 
     /*ASSOCIATIONS START*/

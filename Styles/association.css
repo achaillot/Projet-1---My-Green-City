@@ -237,6 +237,7 @@ body{
 .container{
   width:80%;
   margin:auto;
+  text-align:justify;
 }
 
 .imageAsso1{
@@ -297,13 +298,20 @@ body{
 
 .linkAsso{
     text-decoration:none;
-    color:#71dea2;
+    color:#faf8f0;
     font-weight:bold;
+    text-decoration:underline;
+   
 
 }
 
 .linkAsso:hover{
-    color:#323348;
+    color:black;
+}
+
+.underline{
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 
